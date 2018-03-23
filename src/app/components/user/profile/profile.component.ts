@@ -55,6 +55,7 @@ export class ProfileComponent implements OnInit {
     return newurl;
   }
 
+
   getUser() {
     this.user = this.sharedService.user;
     this.username = this.user['username'];

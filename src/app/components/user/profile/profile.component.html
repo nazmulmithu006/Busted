@@ -51,19 +51,27 @@
         <!--<img src="../../../../assets/images/placeholder-user-1-400x400.png" height="400" width="400"/>-->
         <div class="w3-card w3-margin w3-margin-top center">
 
+
+          <br/>
+          <img class="img-responsive" [src] = updateImageUrl(user.url)  />
+          <br/>
+
+
+
           <!--<img src = "" style="width:100%">-->
-          <img src="../../../../assets/images/annunziato.jpg"
-               height="240" width="240" style="border:2px solid blue;">
+          <!--<img src="../../../../assets/images/annunziato.jpg"-->
+               <!--height="240" width="240" style="border:2px solid blue;">-->
 
           <div class="w3-container w3-white">
 
 
-                    <form ngNoForm action="{{baseUrl}}/api/uploadpicture" method="post" enctype="multipart/form-data">
+            <form ngNoForm action="{{baseUrl}}/api/uploadpicture" method="post" enctype="multipart/form-data">
               <input  name="myFile"   type="file" class="form-control"/>
               <input  name="userId" value="{{userId}}"   style="display: none"/>
               <button type="submit" class="btn btn-primary btn-block ">Upload Image</button>
               <br/>
             </form>
+
 
             <label class ='letter-tiffany '>Hi, {{user.firstName}}! &nbsp; &nbsp; Role: {{user.role}}</label>
 

@@ -63,7 +63,7 @@
         <li class="list-group-item blue borderless ">
 
           <!--<a routerLink="/profile/{{ userId }}/website/{{ wid }}/page">-->
-          <b>  {{ website.name }}    {{website.description}}     </b>
+          <b>  {{ website.name }}:    {{website.description}}     </b>
           <!--</a>-->
 
           <!--<a class="pull-right" >-->
@@ -82,20 +82,20 @@
         <!--<br/>-->
 
 
-        <b class ='blue'>Class Name</b>
+        <b class ='blue'>Semester</b>
 
         <input [(ngModel)]="this.website.name"
                 class="form-control"
                 type="text"
-                placeholder='name'>
+                placeholder='Semester'>
 
-        <b class ='blue'>Class Description</b>
+        <b class ='blue'>Course Name</b>
 
 
         <textarea [(ngModel)]="this.website.description"
                   class="form-control"
                    type="text"
-                   placeholder='description'
+                   placeholder='Course Name'
                    rows="6"></textarea>
 
           <!--<b class ='blue'>Class Description</b>-->

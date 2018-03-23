@@ -54,7 +54,7 @@
         <li class="list-group-item blue borderless">
 
           <!--<a routerLink="/profile/{{ userId }}/website/{{ wid }}/page">-->
-          {{ website.name }}
+          <b>  {{ website.name }}:    {{website.description}}     </b>
           <!--</a>-->
 
           <!--<a class="pull-right" >-->
@@ -70,24 +70,24 @@
       <form (ngSubmit) = "create()" #f="ngForm">
         <div class="container-fluid">
 
-            <b class="blue">Name</b>
+            <b class="blue">Semester</b>
 
           <input ngModel
-                 placeholder="Course name"
+                 placeholder="Semester"
                  name="websitename"
                  class="form-control"
                  type="text"
                  required
                  #websitename = "ngModel"/>
 
-            <b class="blue">Description</b>
+            <b class="blue">Course Name</b>
 
 
 
           <textarea ngModel
                     class="form-control"
                     type="text"
-                    placeholder='Description'
+                    placeholder='Course Name'
                     rows="6"
                     name="description"
                     #description = "ngModel"></textarea>
